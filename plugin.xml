@@ -52,8 +52,14 @@
 			</feature>
 	    </config-file>
 	    
+	    <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- InApp Billing -->
+			<uses-permission android:name="com.android.vending.BILLING" />
+       	    </config-file>
+
+	    
 	    <!-- Plugin Class -->
-	    <source-file src="platforms/android/src/jp/wizcorp/phonegap/plugin/wizPurchase/wizPurchasePlugin.java"
+	    <source-file src="platforms/android/src/jp/wizcorp/phonegap/plugin/wizPurchase/WizPurchasePlugin.java"
 	            target-dir="src/jp/wizcorp/phonegap/plugin/wizPurchase"/>
 	            
 	    <!-- Billing Helper Classes -->
@@ -80,9 +86,7 @@
 	    <source-file src="platforms/android/src/com/android/vending/billing/IInAppBillingService.aidl"
 	            target-dir="src/com/android/vending/billing"/>
 	            
-	    <!-- Billing Key String Holder -->
-	    <source-file src="platforms/android/res/values/billing_key.xml"
-	            target-dir="res/values/"/>
+	
     </platform>
 
 </plugin>
