@@ -80,9 +80,7 @@
 	    <source-file src="platforms/android/src/com/android/vending/billing/IInAppBillingService.aidl"
 	            target-dir="src/com/android/vending/billing"/>
 	            
-	    <!-- Billing Key String Holder -->
-	    <source-file src="platforms/android/res/values/billing_key.xml"
-	            target-dir="res/values/"/>
+	
     </platform>
 
 </plugin>
