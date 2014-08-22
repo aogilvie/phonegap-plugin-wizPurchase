@@ -52,6 +52,12 @@
 			</feature>
 	    </config-file>
 	    
+	    <config-file target="AndroidManifest.xml" parent="/manifest">
+            <!-- InApp Billing -->
+			<uses-permission android:name="com.android.vending.BILLING" />
+       	    </config-file>
+
+	    
 	    <!-- Plugin Class -->
 	    <source-file src="platforms/android/src/jp/wizcorp/phonegap/plugin/wizPurchase/WizPurchasePlugin.java"
 	            target-dir="src/jp/wizcorp/phonegap/plugin/wizPurchase"/>
